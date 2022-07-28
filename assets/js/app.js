@@ -1,11 +1,5 @@
 const sounds = [
-    'a',
-    'e',
-    '3',
-    'i',
-    'o',
-    'c',
-    'u'
+    'æ','ɑ', 'ə','ɛ', 'i', 'ɪ','ɔ','u','ʊ','ʌ'
 ];
 
 sounds.forEach((sound) => {
@@ -30,3 +24,5 @@ const stopSongs = () => {
         song.currentTime = 0;
     })
 }
+
+ 
