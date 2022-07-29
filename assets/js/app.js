@@ -24,5 +24,3 @@ const stopSongs = () => {
         song.currentTime = 0;
     })
 }
-
- 
