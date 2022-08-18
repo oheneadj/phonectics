@@ -37,6 +37,8 @@ const sounds = [
   "r",
   "s",
   "sh",
+  "sion",
+  "z",
   "t",
   "tʃ",
   "v",
