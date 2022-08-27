@@ -11,9 +11,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%vh;
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
   margin: 0;
   padding: 10px;
 }
@@ -33,7 +33,6 @@ section {
   grid-template-rows: repeat(6, 1fr);
   width: 90%;
   height: 90%;
-  background-color: green;
 }
 
 h1,
