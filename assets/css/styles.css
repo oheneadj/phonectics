@@ -39,6 +39,10 @@ p {
   margin-bottom: 30px;
 }
 
+h3 {
+  padding: 10px;
+}
+
 .btn {
   border-radius: 5px;
   -webkit-border-radius: 5px;
