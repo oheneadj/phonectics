@@ -1,3 +1,4 @@
+// Sounds
 const monophthongs = ["æ", "ɑ", "ɔ", "ʌ", "ɚ", "i", "ɪ", "ʊ", "u", "ɝ"];
 
 const vowels = ["ɛ", "ɛr", "ɑr", "ɔr", "ə", "ɪr", "ʊr"];
@@ -30,14 +31,68 @@ const consonants = [
   "ð",
   "θ",
 ];
+// Words
+
+const monopthongWords = [
+  "hat",
+  "got",
+  "on",
+  "ago",
+  "red",
+  "see",
+  "it",
+  "blue",
+  "wood",
+  "us",
+];
+const vowelWords = [
+  "first",
+  "chair",
+  "cart",
+  "hour",
+  "order",
+  "around",
+  "here",
+  "tour",
+];
+const diphongWords = ["like", "cloud", "boy", "make", "go"];
+
+const consonantWords = [
+  "pea",
+  "bear",
+  "teal",
+  "dog",
+  "car",
+  "go",
+  "cheese",
+  "june",
+  "fly",
+  "video",
+  "think",
+  "this",
+  "sun",
+  "zoo",
+  "sheep",
+  "vision",
+  "hot",
+  "mouse",
+  "no",
+  "sing",
+  "love",
+  "rose",
+  "wet",
+  "yet",
+];
 
 //functions for displaying various sounds
 
-// Monophthong
+//Monophthong
 monophthongs.forEach((monophthong) => {
   const btn = document.createElement("button");
+
   btn.classList.add("btn");
   btn.classList.add("monophthong");
+  btn.setAttribute("id", "mono");
 
   btn.innerText = monophthong;
 
@@ -49,7 +104,7 @@ monophthongs.forEach((monophthong) => {
   document.getElementById("monophthongs-box").appendChild(btn);
 });
 
-// Vowels
+//Vowels
 vowels.forEach((vowel) => {
   const btn = document.createElement("button");
   btn.classList.add("btn");
@@ -65,7 +120,7 @@ vowels.forEach((vowel) => {
   document.getElementById("vowels-box").appendChild(btn);
 });
 
-// Diphongs
+//Diphongs
 diphongs.forEach((diphong) => {
   const btn = document.createElement("button");
   btn.classList.add("btn");
@@ -81,7 +136,7 @@ diphongs.forEach((diphong) => {
   document.getElementById("diphongs-box").appendChild(btn);
 });
 
-// Consonants
+//Consonants
 consonants.forEach((consonant) => {
   const btn = document.createElement("button");
   btn.classList.add("btn");
@@ -97,9 +152,51 @@ consonants.forEach((consonant) => {
   document.getElementById("consonants-box").appendChild(btn);
 });
 
+// ===== Display Words for each button =================================
+
+// Get monopthong buttons and attach a span whose inner text is word from monopthongWords
+const monopthongBtn = document.getElementsByClassName("monophthong");
+console.log(monopthongBtn[1]);
+
+for (let i = 0; i < monopthongBtn.length; i++) {
+  const span = document.createElement("span");
+  span.innerText = monopthongWords[i];
+  monopthongBtn[i].appendChild(span);
+}
+
+// Get vowel buttons and attach a span whose inner text is word from vowelWords
+const vowelBtn = document.getElementsByClassName("vowel");
+console.log(vowelBtn[1]);
+
+for (let i = 0; i < vowelBtn.length; i++) {
+  const span = document.createElement("span");
+  span.innerText = vowelWords[i];
+  vowelBtn[i].appendChild(span);
+}
+
+// Get diphong buttons and attach a span whose inner text is word from diphongWords
+const diphongBtn = document.getElementsByClassName("diphong");
+console.log(diphongBtn[1]);
+
+for (let i = 0; i < diphongBtn.length; i++) {
+  const span = document.createElement("span");
+  span.innerText = diphongWords[i];
+  diphongBtn[i].appendChild(span);
+}
+
+// Get consonant buttons and attach a span whose inner text is word from consonantWords
+const consonantBtn = document.getElementsByClassName("consonant");
+console.log(consonantBtn[1]);
+
+for (let i = 0; i < consonantBtn.length; i++) {
+  const span = document.createElement("span");
+  span.innerText = consonantWords[i];
+  consonantBtn[i].appendChild(span);
+}
+
 //========== Functions to stop sounds ========
 
-//Stop all sounds that
+//Stop all sounds
 const stopSongs = () => {
   stopMonophthongSongs();
   stopDiphongSongs();
