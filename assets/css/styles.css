@@ -11,9 +11,9 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100%vh;
   text-align: center;
-  overflow: hidden;
+  overflow: scroll;
   margin: 0;
   padding: 10px;
 }
@@ -31,9 +31,6 @@ section {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  width: 90%;
-  height: 90%;
-  background-color: green;
 }
 
 h1,
@@ -96,22 +93,22 @@ p {
 
 #monophthong-box {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(4, 1fr);
   background-color: rgb(212, 89, 89);
 }
 
 #vowel-box {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: blue;
 }
 
 #diphong {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   background-color: gold;
 }
 
@@ -135,4 +132,11 @@ p {
   -ms-transform: translateY(4px);
   -o-transform: translateY(4px);
   box-shadow: 0 0 10px #fff;
+}
+span {
+  color: white;
+  display: block;
+  padding-top: 5px;
+  font-weight: 100;
+  font-style: italic;
 }
