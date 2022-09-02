@@ -1,9 +1,9 @@
 // Sounds
-const monophthongs = ["æ", "ɑ", "ɔ", "ɚ", "ɝ", "i", "ɪ", "u", "ʊ", "ʌ"];
+const monophthongs = ["i", "ɪ", "ʊ", "u", "ɛ", "ə", "ʌ", "æ", "ɑ", "ɔ"];
 
-const vowels = ["ɛ", "ɛr", "ɑr", "aʊr", "ɔr", "ə", "ɪr", "ʊr"];
+const vowels = ["ɪr", "ʊr", "ɝ", "ɚ", "ɔr", "ɛr", "aʊr", "ɑr"];
 
-const diphongs = ["aɪ", "aʊ", "ɔɪ", "eɪ", "oʊ"];
+const diphongs = ["eɪ", "ɔɪ", "oʊ", "aɪ", "aʊ"];
 
 const consonants = [
   "p",
@@ -34,28 +34,28 @@ const consonants = [
 // Words
 
 const monopthongWords = [
+  "see",
+  "it",
+  "wood",
+  "blue",
+  "red",
+  "ago",
+  "us",
   "hat",
   "got",
   "on",
-  "ago",
-  "red",
-  "see",
-  "it",
-  "blue",
-  "wood",
-  "us",
 ];
 const vowelWords = [
-  "first",
-  "chair",
-  "cart",
-  "hour",
-  "order",
-  "around",
   "here",
   "tour",
+  "first",
+  "offer",
+  "order",
+  "chair",
+  "hour",
+  "cart",
 ];
-const diphongWords = ["like", "cloud", "boy", "make", "go"];
+const diphongWords = ["make", "boy", "go", "like", "cloud"];
 
 const consonantWords = [
   "pea",
