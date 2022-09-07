@@ -28,7 +28,7 @@ section {
 .container {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 
 h1,
@@ -149,4 +149,8 @@ a {
 
 .audio {
   display: hidden;
+}
+
+img {
+  width: 100%;
 }
