@@ -11,9 +11,8 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  height: 100%vh;
   text-align: center;
-  overflow: scroll;
+
   margin: 0;
   padding: 10px;
 }
@@ -24,7 +23,6 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  overflow: hidden;
 }
 
 .container {
@@ -145,10 +143,10 @@ span {
   font-style: italic;
 }
 
-section {
-  height: 100vh;
-}
-
 a {
   font: 500;
+}
+
+.audio {
+  display: hidden;
 }
